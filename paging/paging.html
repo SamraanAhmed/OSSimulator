@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Paging Simulator</title>
+  <link rel="stylesheet" href="paging.css">
+</head>
+<body>
+<h1>Memory Paging Simulator (FIFO)</h1>
+
+<label>Reference String (comma separated):</label>
+<input type="text" id="refString" placeholder="7,0,1,2,0,3,0,4">
+<br><br>
+<label>Number of Frames:</label>
+<input type="number" id="frames" placeholder="3">
+<br><br>
+<button onclick="simulatePaging()">Simulate</button>
+
+<h2>Page Frames:</h2>
+<div id="framesDisplay"></div>
+
+<h2>Page Faults:</h2>
+<p id="pageFaults">0</p>
+
+<script src="paging.js"></script>
+</body>
+</html>

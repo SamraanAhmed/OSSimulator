@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Process Lifecycle Simulator</title>
+  <link rel="stylesheet" href="process.css">
+</head>
+<body>
+
+<h1>Process Lifecycle Simulator</h1>
+
+<div class="controls">
+  <button onclick="nextState()">Next State</button>
+</div>
+
+<div class="states">
+  <div class="state" id="new">New</div>
+  <div class="state" id="ready">Ready</div>
+  <div class="state" id="running">Running</div>
+  <div class="state" id="waiting">Waiting</div>
+  <div class="state" id="terminated">Terminated</div>
+</div>
+
+<script src="process.js"></script>
+</body>
+</html>
